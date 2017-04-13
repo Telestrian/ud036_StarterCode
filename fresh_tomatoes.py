@@ -18,7 +18,7 @@ main_page_head = '''
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
-            padding-top: 80px;
+            padding-top: 5em;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -36,8 +36,8 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 5em;
+            padding-top: 5em;
         }
         .movie-tile:hover {
             background-color: #EEE;
@@ -72,7 +72,9 @@ main_page_head = '''
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
-              'frameborder': 0
+              'frameborder': 0,
+              'height': 600,
+              'width': 800
             }));
         });
         // Animate in the movies when the page loads
@@ -106,8 +108,8 @@ main_page_content = '''
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+          <div class="navbar-header" style = "text-align: center;">
+            <a class="navbar-brand" href="#"><h3 style = "color: white; margin: 0.2em; align: auto;">Fresh Tomatoes Movie Trailers</h3></a>
           </div>
         </div>
       </div>
@@ -122,8 +124,8 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
+<div class="col-md-10 col-lg-6 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <img src="{poster_image_url}" width="400" height="600">
     <h2>{movie_title}</h2>
 </div>
 '''
