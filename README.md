@@ -27,7 +27,9 @@ You can run the file by installing Python 2.7 and running the command
 from within the directory you have downloaded this project into.
 
 Alternatively you can run it from within an IDE like IDLE or PyCharm by 
-opening fresh_tomatoes.py within the IDE and running it.
+opening `entertainment_center.py` within the IDE and running it using the IDE's run command.
+
+IDLE allows you to do this by pressing F5 or using the menu bar to navigate to Run -> Run Module.
 
 ## Prerequisites
 
